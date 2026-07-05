@@ -11,7 +11,7 @@ A simple yet powerful desktop application for transforming text case with an int
 - **Keyboard Shortcuts** - Right-click context menus for quick actions
 
 ## Preview
-![Главное окно программы](screenshot.png)
+<img src="screenshot.png" alt="Login page" height="500">
 
 ## Installation
 
