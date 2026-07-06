@@ -32,7 +32,7 @@ cd text-transformer-pro
 ### Run the Application
 
 ```bash
-python text_transformer_pro.py
+python main.py
 ```
 
 ## Usage
@@ -100,10 +100,10 @@ make pyinstaller
 
 ```
 text-transformer-pro/
-├── text_transformer_pro.py   # Main application file
-├── screenshot.png            # Application screenshot
-├── README.md                 # This documentation
-└── build.py                  # (Optional) Build script
+├── main.py          # Main application file
+├── screenshot.png   # Application screenshot
+├── Readme.md       # This documentation
+└── LICENSE.md      # License file
 ```
 
 ## System Requirements
