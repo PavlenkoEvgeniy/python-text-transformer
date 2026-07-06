@@ -1,8 +1,8 @@
-# Text Transformer Pro
+# 🔤 Text Transformer Pro ✨
 
 A simple yet powerful desktop application for transforming text case with an intuitive interface and clipboard integration.
 
-## Features
+## ⚡ Features
 
 - **Multiple Text Transformations** - Convert text between different cases
 - **Clipboard Integration** - Copy results and paste text with right-click context menus
@@ -10,16 +10,16 @@ A simple yet powerful desktop application for transforming text case with an int
 - **Clean Interface** - Simple, distraction-free design
 - **Keyboard Shortcuts** - Right-click context menus for quick actions
 
-## Preview
+## 📸 Preview
 <img src="screenshot.png" alt="Login page" height="500">
 
-## Installation
+## 📥 Installation
 
-### Prerequisites
+### ✅ Prerequisites
 - Python 3.6 or higher
 - Tkinter (included with Python standard library)
 
-### Install from Source
+### 📦 Install from Source
 
 1. Clone or download the repository:
 ```bash
@@ -29,15 +29,15 @@ cd text-transformer-pro
 
 2. No additional dependencies required - the application uses only Python's standard library!
 
-### Run the Application
+### 🚀 Run the Application
 
 ```bash
 python main.py
 ```
 
-## Usage
+## 📖 Usage
 
-### Basic Workflow
+### 🛠️ Basic Workflow
 
 1. **Enter Text**
    - Type or paste your text into the input area
@@ -61,14 +61,14 @@ python main.py
 5. **Clear Fields**
    - Click "Clear" to reset both input and result areas
 
-### Context Menu Features
+### 📋 Context Menu Features
 
 | Area | Right-click Options |
 |------|-------------------|
 | Input Area | Paste text from clipboard |
 | Result Area | Copy text to clipboard |
 
-## Supported Transformations
+## 🔄 Supported Transformations
 
 | Operation | Example Input | Example Output |
 |-----------|--------------|----------------|
@@ -77,9 +77,9 @@ python main.py
 | Capitalize | "hello world" | "Hello world" |
 | Title | "hello world" | "Hello World" |
 
-## Building Standalone Executable
+## 🏗️ Building Standalone Executable
 
-### Using PyInstaller
+### 🔧 Using PyInstaller
 
 1. Install PyInstaller:
 ```bash
@@ -91,7 +91,7 @@ pip install pyinstaller
 pyinstaller --onefile --windowed  --name TextTransformer main.py
 ```
 
-### Using Build Script
+### 📜 Using Build Script
 ```bash
 make pyinstaller
 ```
