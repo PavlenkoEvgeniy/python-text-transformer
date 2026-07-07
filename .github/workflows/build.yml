@@ -49,12 +49,12 @@ jobs:
         run: |
           cd dist
           if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            # Already has .exe extension from --name
             ls -la
           else
             mv TextTransformer TextTransformer-${{ matrix.os }}
             ls -la
           fi
+          shell: bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
