@@ -45,24 +45,11 @@ jobs:
         env:
           PYTHONPATH: src
 
-      - name: Rename executable
-        run: |
-          cd dist
-          if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            ls -la
-          else
-            mv TextTransformer TextTransformer-${{ matrix.os }}
-            ls -la
-          fi
-          shell: bash
-
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
-          path: |
-            dist/TextTransformer*
-            dist/TextTransformer.exe
+          path: dist/
           retention-days: 30
 
   release:
