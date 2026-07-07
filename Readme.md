@@ -9,6 +9,8 @@ A simple yet powerful desktop application for transforming text case with an int
 - **Real-time Preview** - See transformed text immediately
 - **Clean Interface** - Simple, distraction-free design
 - **Keyboard Shortcuts** - Right-click context menus for quick actions
+- **Well-Tested** - Comprehensive test suite with pytest
+- **Modern Architecture** - Clean separation of concerns (business logic + GUI)
 
 ## 📸 Preview
 <img src="screenshot.png" alt="Login page" height="500">
@@ -27,12 +29,29 @@ git clone https://github.com/EvgeniyPavlenko85/text-transformer-pro.git
 cd text-transformer-pro
 ```
 
-2. No additional dependencies required - the application uses only Python's standard library!
+2. Install the package in development mode (optional but recommended):
+```bash
+pip install -e .
+```
+
+This will install the package and make the `text-transformer` command available.
+
+### 🧪 Install Test Dependencies
+
+To run tests, install the test dependencies:
+```bash
+pip install -e ".[dev]"
+```
 
 ### 🚀 Run the Application
 
 ```bash
-python main.py
+python -m text_transformer.gui
+```
+
+Or if installed:
+```bash
+text-transformer
 ```
 
 ## 📖 Usage
@@ -88,7 +107,7 @@ pip install pyinstaller
 
 2. Build the executable:
 ```bash
-pyinstaller --onefile --windowed  --name TextTransformer main.py
+PYTHONPATH=src pyinstaller --onefile --windowed --name TextTransformer main.py
 ```
 
 ### 📜 Using Build Script
@@ -96,14 +115,51 @@ pyinstaller --onefile --windowed  --name TextTransformer main.py
 make pyinstaller
 ```
 
+## 🧪 Testing
+
+### Running Tests
+
+Run all tests with coverage:
+```bash
+pytest --cov=src --cov-report=term-missing
+```
+
+Run only unit tests:
+```bash
+pytest tests/test_transformer.py -v
+```
+
+Run only integration tests:
+```bash
+pytest tests/test_gui.py -v
+```
+
+### Test Coverage
+
+The project includes:
+- **55 unit tests** for the transformation logic
+- **10 integration tests** for GUI components
+- **65 total tests**
+
 ## File Structure
 
 ```
 text-transformer-pro/
-├── main.py          # Main application file
-├── screenshot.png   # Application screenshot
-├── Readme.md       # This documentation
-└── LICENSE.md      # License file
+├── src/
+│   └── text_transformer/
+│       ├── __init__.py       # Package initialization
+│       ├── transformer.py    # Core transformation logic
+│       └── gui.py             # GUI components
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py           # Test fixtures
+│   ├── test_transformer.py   # Unit tests
+│   └── test_gui.py           # Integration tests
+├── pyproject.toml           # Project configuration
+├── main.py                   # Legacy entry point (kept for compatibility)
+├── screenshot.png            # Application screenshot
+├── Readme.md                 # This documentation
+└── LICENSE.md               # License file
 ```
 
 ## System Requirements
@@ -141,7 +197,7 @@ text-transformer-pro/
 
 ## About
 
-**Version:** 1.0.0  
+**Version:** 1.0.1  
 **License:** Freeware  
 **Author:** Pavlenko Evgeniy  
 **Email:** pavlenkoevgeniy85@gmail.com  
@@ -170,6 +226,12 @@ Feel free to submit issues, feature requests, or pull requests on the GitHub rep
 - **Live Preview** - Transform text automatically as you type
 
 ## Changelog
+
+### Version 1.0.1
+- Refactored to proper package structure
+- Added unit and integration tests
+- Added GitHub Actions for cross-platform builds
+- Added type hints and documentation
 
 ### Version 1.0.0
 - Initial release

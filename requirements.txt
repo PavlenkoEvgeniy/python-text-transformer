@@ -1,5 +1,11 @@
+# Core dependencies (only PyInstaller for building)
 altgraph==0.17.5
 packaging==26.2
 pyinstaller==6.21.0
 pyinstaller-hooks-contrib==2026.6
 setuptools==82.0.1
+
+# Development dependencies (install with pip install -e ".[dev]")
+# pytest>=7.0
+# pytest-cov>=4.0
+# pytest-mock>=3.10
