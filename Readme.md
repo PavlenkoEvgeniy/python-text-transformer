@@ -197,7 +197,7 @@ text-transformer-pro/
 
 ## About
 
-**Version:** 1.0.1  
+**Version:** 1.0.2  
 **License:** Freeware  
 **Author:** Pavlenko Evgeniy  
 **Email:** pavlenkoevgeniy85@gmail.com  
@@ -226,6 +226,10 @@ Feel free to submit issues, feature requests, or pull requests on the GitHub rep
 - **Live Preview** - Transform text automatically as you type
 
 ## Changelog
+
+### Version 1.0.2
+- Fixed GitHub Actions workflow for cross-platform builds
+- Simplified artifact upload
 
 ### Version 1.0.1
 - Refactored to proper package structure
