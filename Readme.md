@@ -197,7 +197,7 @@ text-transformer-pro/
 
 ## About
 
-**Version:** 1.0.3  
+**Version:** 1.0.4  
 **License:** Freeware  
 **Author:** Pavlenko Evgeniy  
 **Email:** pavlenkoevgeniy85@gmail.com  
@@ -227,8 +227,8 @@ Feel free to submit issues, feature requests, or pull requests on the GitHub rep
 
 ## Changelog
 
-### Version 1.0.3
-- Updated version to 1.0.3
+### Version 1.0.4
+- Updated version to 1.0.4
 
 ### Version 1.0.2
 - Fixed GitHub Actions workflow for cross-platform builds

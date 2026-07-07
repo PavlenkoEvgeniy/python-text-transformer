@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "text-transformer-pro"
-version = "1.0.3"
+version = "1.0.4"
 description = "A desktop application for transforming text case"
 readme = "Readme.md"
 license = {text = "Freeware"}
